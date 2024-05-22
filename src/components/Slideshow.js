@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import {christmasnailart, christmasplaid, multiplenails} from './images/index'
+import {christmasnailart, christmasplaid, multiplenails, christmas, grinchnails} from './images/index'
 
 function Slideshow() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -16,6 +16,14 @@ function Slideshow() {
     },
     {
       url: multiplenails,
+      alt: "multiplenails",
+    },
+    {
+      url: christmas,
+      alt: "nail3",
+    },
+    {
+      url: grinchnails,
       alt: "nail3",
     },
   ];

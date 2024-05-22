@@ -35,6 +35,7 @@ body {
 }
 .nav-links a:hover {
   color: #dabd8a;
+
 }
 .nav-links a.active {
   color: palevioletred;
@@ -52,7 +53,7 @@ body {
 /* About Section */
 .About-content {
   text-align: center;
-  color:#27221f;
+  color: #27221f;
   font-size: 16px;
   padding-bottom: 100px;
 }
@@ -69,17 +70,35 @@ body {
   padding-bottom: 100px;
   margin-bottom: 100px;
   width: 50%;
+  max-width: 100%;
+  /* margin: 0 auto; */
 }
 .box-slideshow {
   position: absolute;
   top: 50%;
   left: 50%;
   padding: 10px;
-  /* font-size: 15px; */
   border: 1px solid #27221f;
   margin: 30px;
   padding: 30px 50px 50px 30px;
+}
 
+@media (max-width: 768px) {
+  .slideshow-container {
+    width: 80%;
+  }
+  .box-slideshow {
+    padding: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .slideshow-container {
+    width: 90%; /* Further adjust container width for very small screens */
+  }
+
+  .box-slideshow {
+    padding: 10px; /* Further adjust padding for very small screens */
+  }
 }
 
 .social-media {
@@ -180,3 +199,80 @@ body {
   font-size: 25px;
   text-align: right;
 }
+/* about */ 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
