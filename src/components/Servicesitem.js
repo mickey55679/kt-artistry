@@ -18,7 +18,7 @@ function ServicesItem({
       <p>Price: ${price}</p>
       <p>Downpayment: ${downpayment}</p>
       <button onClick={() => onAddToCart(title, downpayment)}>
-        Add to Cart
+        Add to Cart - ${downpayment} Downpayment
       </button>
     </div>
   );

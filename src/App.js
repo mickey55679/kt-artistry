@@ -6,8 +6,8 @@ import { Home, About, Navbar, Services, Footer, Checkout } from './components';
 function App() {
     const [cart, setCart] = useState([]);
 
-    const addToCart = (item) => {
-      setCart([...cart, item]);
+    const addToCart = (title, downpayment) => {
+      setCart([...cart, { title, downpayment }]);
     };
     
   return (

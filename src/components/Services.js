@@ -2,14 +2,14 @@ import React, { useState } from "react";
 import ServicesItem from "./Servicesitem";
 import {multiplenails, spider, christmas, christmasnailart} from "./images/index"
 
-function Services() {
+function Services({ addToCart }) {
   const [filter, setFilter] = useState("all");
   const [activeButton, setActiveButton] = useState("all");
-   const [cart, setCart] = useState([]);
+ 
 
   const filterSelection = (category) => {
     setFilter(category);
-     setActiveButton(category);
+    setActiveButton(category);
     const elements = document.getElementsByClassName("column");
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
@@ -20,10 +20,6 @@ function Services() {
       }
     }
   };
- const addToCart = (title, downpayment) => {
-   setCart([...cart, { title, downpayment }]);
- };
-
 
   return (
     <div className="main">
@@ -301,14 +297,6 @@ function Services() {
           price={40}
           onAddToCart={addToCart}
         />
-        {/* <h2>Cart</h2> */}
-        <ul>
-          {cart.map((item, index) => (
-            <li key={index}>
-              {item.title} - Downpayment: ${item.downpayment}
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );
