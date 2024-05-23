@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import ServicesItem from "./Servicesitem";
-import {multiplenails, spider} from "./images/index"
+import {multiplenails, spider, christmas, christmasnailart} from "./images/index"
 
 function Services() {
   const [filter, setFilter] = useState("all");
   const [activeButton, setActiveButton] = useState("all");
+   const [cart, setCart] = useState([]);
 
   const filterSelection = (category) => {
     setFilter(category);
@@ -19,7 +20,9 @@ function Services() {
       }
     }
   };
-
+ const addToCart = (title, downpayment) => {
+   setCart([...cart, { title, downpayment }]);
+ };
 
 
   return (
@@ -81,169 +84,231 @@ function Services() {
           category="manicures"
           image={spider}
           title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          description=""
+          price={50}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image={christmasnailart}
+          title="Kid's Manicure with Regular Polish"
+          description=""
+          price={25}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="GelX fill"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Gelx Nails fullset"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Manicure"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Polish Change"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         {/* Pedicures */}
         <ServicesItem
           category="pedicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Deluxe Pedicure with Gel/Shellac"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="pedicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Basic Pedicure with Gel/Shellac"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="pedicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="KT pedicure"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="pedicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Deluxe pedicure"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="pedicures"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Basic Pedicure"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         {/* Nail Enhancements  */}
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Ombre Nails with extensions"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Ombre Dipping Powder on Natural Nails"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Dipping powder with extensions"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Fullset acrylics with gel polish"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Acrylic fill with gel"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailEnhancements"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Dipping Powder"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         {/* Nail Maintenance */}
         <ServicesItem
           category="nailMaintenance"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Nails trimming"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailMaintenance"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Luminary Nails Fill"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailMaintenance"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Luminary Nails"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailMaintenance"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Shape/matte/design"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="nailMaintenance"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Nail Art"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         {/* Specialty Services */}
         <ServicesItem
           category="specialtyServices"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="French design"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="specialtyServices"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Kid's Dipping powder"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="specialtyServices"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Men's Mani/Pedi Deluxe"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         <ServicesItem
           category="specialtyServices"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Men's Mani/Pedicure (Basic)"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
         {/* Miscellaneous */}
         <ServicesItem
           category="miscellaneous"
-          image="/path/to/manicure_image.jpg"
-          title="Gel/Shellac Manicure"
-          description="A long-lasting polish with a gel finish."
+          image=""
+          title="Nail Removal"
+          description=""
+          price={40}
+          onAddToCart={addToCart}
         />
+        {/* <h2>Cart</h2> */}
+        <ul>
+          {cart.map((item, index) => (
+            <li key={index}>
+              {item.title} - Downpayment: ${item.downpayment}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

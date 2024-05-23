@@ -4,13 +4,30 @@ body {
   background-color: #f9f4f1;
 }
 /* navbar -- adjusted for mobile  */
+.navbar-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #f9f4f1;
   padding: 10px 20px;
-  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+ 
 }
 .logo img {
   height: auto;

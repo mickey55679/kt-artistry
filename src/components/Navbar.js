@@ -1,7 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-function Navbar() {
+
+function Navbar({ cartCount }) {
   return (
     <nav className="navbar">
       <div className="logo">
@@ -34,6 +37,12 @@ function Navbar() {
           </NavLink>
         </li>
       </ul>
+      <div className="navbar-cart">
+        <Link to="/checkout">
+          <FontAwesomeIcon icon={faShoppingCart} />
+          {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
+        </Link>
+      </div>
     </nav>
   );
 }

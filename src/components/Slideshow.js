@@ -61,10 +61,16 @@ function Slideshow() {
       <div className="box-slideshow" onClick={() => navigate("./Services")}>
         <div className="paragraph">
           <p>
-            My mission is for you to leave happy with your nails|Sanitation and
-            customer satisfaction is my priority.
+            My mission is to provide exceptional nail care services that ensures
+            my clients leave with beautiful, healthy nails and a sense of joy
+            and satisfaction.
+            
+            <p>
+              I prioritize the highest standards of sanitation and customer care
+              to create a safe, welcoming, and relaxing environment.
+            </p>
           </p>
-        <button className="button-75">Book</button>
+          <button className="button-75">Book</button>
         </div>
       </div>
       <h2 className="background-size-slideshow"> </h2>

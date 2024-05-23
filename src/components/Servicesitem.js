@@ -1,12 +1,27 @@
-function ServicesItem({ category, image, title, description }) {
+import React from "react";
+
+function ServicesItem({
+  category,
+  image,
+  title,
+  description,
+  price,
+  onAddToCart,
+}) {
+  const downpayment = (price * 0.3).toFixed(2); // 30% downpayment
+
   return (
     <div className={`column ${category}`}>
-      <div className="content">
-        <img src={image} alt={title} style={{ width: "100%" }} />
-        <h4>{title}</h4>
-        <p>{description}</p>
-      </div>
+      {image && <img src={image} alt={title} style={{ width: "100%" }} />}
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <p>Price: ${price}</p>
+      <p>Downpayment: ${downpayment}</p>
+      <button onClick={() => onAddToCart(title, downpayment)}>
+        Add to Cart
+      </button>
     </div>
   );
 }
+
 export default ServicesItem;
