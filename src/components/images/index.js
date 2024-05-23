@@ -5,5 +5,6 @@ import christmasplaid from "./christmasplaid.jpeg";
 import multiplenails from "./multiplenails.jpeg"
 import christmas from "./christmas.jpeg"
 import grinchnails from "./grinch.jpeg"
+import spider from './spider.jpeg'
 
-export { familyPhoto, christmasnailart, christmasplaid, multiplenails, christmas, grinchnails };
+export { familyPhoto, christmasnailart, christmasplaid, multiplenails, christmas, grinchnails, spider };

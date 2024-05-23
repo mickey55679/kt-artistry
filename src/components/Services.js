@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ServicesItem from "./Servicesitem";
+import {multiplenails, spider} from "./images/index"
 
 function Services() {
   const [filter, setFilter] = useState("all");
