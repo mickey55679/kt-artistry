@@ -3,9 +3,11 @@ import ServicesItem from "./Servicesitem";
 
 function Services() {
   const [filter, setFilter] = useState("all");
+  const [activeButton, setActiveButton] = useState("all");
 
   const filterSelection = (category) => {
     setFilter(category);
+     setActiveButton(category);
     const elements = document.getElementsByClassName("column");
     for (let i = 0; i < elements.length; i++) {
       const element = elements[i];
@@ -17,52 +19,63 @@ function Services() {
     }
   };
 
-  const addActiveClass = (e) => {
-    const current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    e.target.className += " active";
-  };
+
 
   return (
     <div className="main">
       <h2>Nail Services</h2>
       <div id="myBtnContainer">
-        <button className="btn active" onClick={() => filterSelection("all")}>
+        <button
+          className={`btn ${activeButton === "all" ? "active" : ""}`}
+          onClick={() => filterSelection("all")}
+        >
           Show all
         </button>
-        <button className="btn" onClick={() => filterSelection("manicures")}>
+        <button
+          className={`btn ${activeButton === "manicures" ? "active" : ""}`}
+          onClick={() => filterSelection("manicures")}
+        >
           Manicures
         </button>
-        <button className="btn" onClick={() => filterSelection("pedicures")}>
+        <button
+          className={`btn ${activeButton === "pedicures" ? "active" : ""}`}
+          onClick={() => filterSelection("pedicures")}
+        >
           Pedicures
         </button>
         <button
-          className="btn"
+          className={`btn ${
+            activeButton === "nailEnhancements" ? "active" : ""
+          }`}
           onClick={() => filterSelection("nailEnhancements")}
         >
           Nail Enhancements
         </button>
         <button
-          className="btn"
+          className={`btn ${
+            activeButton === "nailMaintenance" ? "active" : ""
+          }`}
           onClick={() => filterSelection("nailMaintenance")}
         >
           Nail Maintenance
         </button>
         <button
-          className="btn"
+          className={`btn ${
+            activeButton === "specialtyServices" ? "active" : ""
+          }`}
           onClick={() => filterSelection("specialtyServices")}
         >
           Specialty Services
         </button>
         <button
-          className="btn"
+          className={`btn ${activeButton === "miscellaneous" ? "active" : ""}`}
           onClick={() => filterSelection("miscellaneous")}
         >
           Miscellaneous
         </button>
       </div>
       <div className="row">
-        {/* Example Service Items */}
+        {/* Manicures */}
         <ServicesItem
           category="manicures"
           image="/path/to/manicure_image.jpg"
@@ -71,6 +84,161 @@ function Services() {
         />
         <ServicesItem
           category="manicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="manicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="manicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="manicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="manicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        {/* Pedicures */}
+        <ServicesItem
+          category="pedicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="pedicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="pedicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="pedicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="pedicures"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        {/* Nail Enhancements  */}
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailEnhancements"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        {/* Nail Maintenance */}
+        <ServicesItem
+          category="nailMaintenance"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailMaintenance"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailMaintenance"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailMaintenance"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="nailMaintenance"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        {/* Specialty Services */}
+        <ServicesItem
+          category="specialtyServices"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="specialtyServices"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="specialtyServices"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        <ServicesItem
+          category="specialtyServices"
+          image="/path/to/manicure_image.jpg"
+          title="Gel/Shellac Manicure"
+          description="A long-lasting polish with a gel finish."
+        />
+        {/* Miscellaneous */}
+        <ServicesItem
+          category="miscellaneous"
           image="/path/to/manicure_image.jpg"
           title="Gel/Shellac Manicure"
           description="A long-lasting polish with a gel finish."

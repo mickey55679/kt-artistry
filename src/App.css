@@ -265,14 +265,19 @@ h1 {
   cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
+/* Add a gold background color on mouse-over */
 .btn:hover {
-  background-color: #ddd;
+  background-color: #dabd8a
 }
 
 /* Add a dark background color to the active button */
 .btn.active {
-  background-color: #666;
-   color: white;
+  background-color: palevioletred;
+  color: white;
 }
 
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: palevioletred;
+  color: white;
+}
