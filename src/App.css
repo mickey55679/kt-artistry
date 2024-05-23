@@ -78,7 +78,7 @@ body {
   top: 50%;
   left: 50%;
   padding: 10px;
-  border: 1px solid #27221f;
+  /* border: 1px solid #27221f; */
   margin: 30px;
   padding: 30px 50px 50px 30px;
 }
@@ -250,6 +250,16 @@ h1 {
   background-color: white;
   padding: 10px;
 }
+.content {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer; /* Optional: Changes the cursor on hover to indicate interactivity */
+}
+
+.content:hover {
+  transform: scale(1.05); /* Enlarges the item on hover */
+  box-shadow: 0 4px 8px palevioletred; /* Adds a shadow with specified color */
+}
+
 
 /* The "show" class is added to the filtered elements */
 .show {
