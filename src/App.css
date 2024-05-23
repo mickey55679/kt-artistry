@@ -224,60 +224,41 @@ body {
   padding: 20px;
   font-family: Arial;
 }
-
-/* Center website */
 .main {
   max-width: 1000px;
   margin: auto;
 }
 
-h1 {
-  font-size: 50px;
-  word-break: break-all;
+h2 {
+  font-size: 30px; /* Adjusted font size */
+  margin-bottom: 20px; /* Added margin bottom for spacing */
 }
 
 .row {
-  margin: 8px -16px;
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap to the next line */
+  margin: 0 -8px; /* Adjusted margin */
 }
 
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+/* Add padding BETWEEN each item (if you want) */
+.row > * {
+  padding: 0 8px; /* Adjusted padding */
 }
 
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
-}
-.content {
+  width: calc(33.33% - 16px); /* Adjusted width */
+  margin-bottom: 16px; /* Added margin bottom for spacing */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer; /* Optional: Changes the cursor on hover to indicate interactivity */
+  cursor: pointer;
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .content:hover {
-  transform: scale(1.05); /* Enlarges the item on hover */
-  box-shadow: 0 4px 8px palevioletred; /* Adds a shadow with specified color */
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px palevioletred;
 }
 
 /* Style the buttons */
@@ -291,7 +272,7 @@ h1 {
 
 /* Add a gold background color on mouse-over */
 .btn:hover {
-  background-color: #dabd8a;
+  background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
 }
 
 /* Add a dark background color to the active button */
@@ -299,3 +280,5 @@ h1 {
   background-color: palevioletred;
   color: white;
 }
+
+
