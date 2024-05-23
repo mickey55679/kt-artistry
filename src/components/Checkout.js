@@ -1,6 +1,6 @@
 import React from "react";
 
-function Checkout({ cartItems }) {
+function Checkout({ cartItems, removeFromCart }) {
   const handleCheckout = () => {
     // Implement the checkout logic here
     alert("Checkout successful!");
@@ -13,6 +13,7 @@ function Checkout({ cartItems }) {
         {cartItems.map((item, index) => (
           <li key={index}>
             {item.title} - Downpayment: ${item.downpayment}
+            <button onClick={() => removeFromCart(index)}>Remove</button>
           </li>
         ))}
       </ul>

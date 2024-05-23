@@ -2,10 +2,9 @@ import React, { useState } from "react";
 import ServicesItem from "./Servicesitem";
 import {multiplenails, spider, christmas, christmasnailart} from "./images/index"
 
-function Services({ addToCart }) {
+function Services({ addToCart, removeFromCart }) {
   const [filter, setFilter] = useState("all");
   const [activeButton, setActiveButton] = useState("all");
- 
 
   const filterSelection = (category) => {
     setFilter(category);
@@ -83,6 +82,7 @@ function Services({ addToCart }) {
           description=""
           price={50}
           onAddToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <ServicesItem
           category="manicures"
@@ -91,6 +91,7 @@ function Services({ addToCart }) {
           description=""
           price={25}
           onAddToCart={addToCart}
+          removeFromCart={removeFromCart}
         />
         <ServicesItem
           category="manicures"

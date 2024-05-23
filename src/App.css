@@ -14,7 +14,7 @@ body {
   position: absolute;
   top: -10px;
   right: -10px;
-  background-color: red;
+  background-color: palevioletred;
   color: white;
   border-radius: 50%;
   padding: 5px 10px;
@@ -27,7 +27,6 @@ body {
   align-items: center;
   background-color: #f9f4f1;
   padding: 10px 20px;
- 
 }
 .logo img {
   height: auto;
@@ -52,7 +51,6 @@ body {
 }
 .nav-links a:hover {
   color: #dabd8a;
-
 }
 .nav-links a.active {
   color: palevioletred;
@@ -216,7 +214,7 @@ body {
   font-size: 25px;
   text-align: right;
 }
-/* about */ 
+/* about */
 * {
   box-sizing: border-box;
 }
@@ -277,7 +275,6 @@ h1 {
   box-shadow: 0 4px 8px palevioletred; /* Adds a shadow with specified color */
 }
 
-
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
@@ -294,7 +291,7 @@ h1 {
 
 /* Add a gold background color on mouse-over */
 .btn:hover {
-  background-color: #dabd8a
+  background-color: #dabd8a;
 }
 
 /* Add a dark background color to the active button */
@@ -302,4 +299,3 @@ h1 {
   background-color: palevioletred;
   color: white;
 }
-

@@ -7,6 +7,7 @@ function ServicesItem({
   description,
   price,
   onAddToCart,
+  removeFromCart, // Receive removeFromCart function as a prop
 }) {
   const downpayment = (price * 0.3).toFixed(2); // 30% downpayment
 
@@ -18,10 +19,13 @@ function ServicesItem({
       <p>Price: ${price}</p>
       <p>Downpayment: ${downpayment}</p>
       <button onClick={() => onAddToCart(title, downpayment)}>
-        Add to Cart - ${downpayment} Downpayment
+        Add to Cart
       </button>
+      <button onClick={() => removeFromCart(title)}>Remove from Cart</button>
+
     </div>
   );
 }
+
 
 export default ServicesItem;
