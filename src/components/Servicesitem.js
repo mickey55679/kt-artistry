@@ -1,6 +1,6 @@
 import React from "react";
 
-const ServicesItem = ({
+function ServicesItem({
   category,
   image,
   title,
@@ -8,21 +8,21 @@ const ServicesItem = ({
   price,
   onAddToCart,
   removeFromCart,
-}) => {
+}) {
   return (
-    <div className="content">
-      <img src={image} alt={title} />
+    <div className="service-item">
+      <img
+        src={image}
+        alt={title}
+        style={{ width: "100%", borderRadius: "4px" }}
+      />
       <h3>{title}</h3>
       <p>{description}</p>
       <p>${price}</p>
-      <div>
-        <button onClick={() => onAddToCart({ title, price })}>
-          Add to Cart
-        </button>
-        <button onClick={() => removeFromCart({ title, price })}>Remove</button>
-      </div>
+      <button onClick={onAddToCart}>Add to Cart</button>
+      <button onClick={removeFromCart}>Remove from Cart</button>
     </div>
   );
-};
+}
 
 export default ServicesItem;

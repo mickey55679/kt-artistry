@@ -11,14 +11,14 @@ function Services({ addToCart, removeFromCart }) {
     setActiveFilter(category);
   };
    const serviceData = [
-//      Manicures:
+     //      Manicures:
 
-// Kid’s Manicure with Regular Polish
-// Gel/Shellac Manicure
-// GelX fill
-// Gelx Nails fullset
-// Manicure
-// Polish Change
+     // Kid’s Manicure with Regular Polish
+     // Gel/Shellac Manicure
+     // GelX fill
+     // Gelx Nails fullset
+     // Manicure
+     // Polish Change
      {
        key: uuidv4(),
        category: "manicures",
@@ -39,42 +39,112 @@ function Services({ addToCart, removeFromCart }) {
        onAddToCart: addToCart,
        removeFromCart: removeFromCart,
      },
-//      Pedicures:
-// Deluxe Pedicure with Gel/Shellac
-// Basic Pedicure with Gel/Shellac
-// KT pedicure
-// Deluxe pedicure
-// Basic Pedicure
 
-// Nail Enhancements:
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       key: uuidv4(),
+       category: "",
+       image: "",
+       title: "",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     //      Pedicures:
+     // Deluxe Pedicure with Gel/Shellac $10 30min
+     // Basic Pedicure with Gel/Shellac
+     // KT pedicure
+     // Deluxe pedicure
+     // Basic Pedicure
 
-// Ombre Nails with extensions
-// Ombre Dipping Powder on Natural Nails
-// Dipping powder with extensions
-// Fullset acrylics with gel polish
-// Acrylic fill with gel
-// Dipping Powder
+     // Nail Enhancements:
 
-// Nail Maintenance:
+     // Ombre Nails with extensions
+     // Ombre Dipping Powder on Natural Nails
+     // Dipping powder with extensions
+     // Fullset acrylics with gel polish
+     // Acrylic fill with gel
+     // Dipping Powder
 
-// Nails trimming
-// Luminary Nails Fill
-// Luminary Nails
-// Shape/matte/design
-// Nail Art
-// Specialty Services:
+     // Nail Maintenance:
 
-// French design
-// Kid’s Dipping powder
-// Men’s Mani/Pedi Deluxe
-// Men’s Mani/Pedicure (Basic)
-// Miscellaneous:
+     // Nails trimming
+     // Luminary Nails Fill
+     // Luminary Nails
+     // Shape/matte/design
+     // Nail Art
+     // Specialty Services:
 
-// Nail Removal
-// $15.00
-// 30 mins
-// Nail Removal
-    
+     // French design
+     // Kid’s Dipping powder
+     // Men’s Mani/Pedi Deluxe
+     // Men’s Mani/Pedicure (Basic)
+     // Miscellaneous:
+
+     // Nail Removal
+     // $15.00
+     // 30 mins
+     // Nail Removal
    ];
   return (
     <div className="main">
@@ -103,16 +173,17 @@ function Services({ addToCart, removeFromCart }) {
         {serviceData.map((item) => {
           if (activeFilter === "all" || item.category === activeFilter) {
             return (
-              <ServicesItem
-                key={uuidv4()} // Generate a unique key
-                category={item.category}
-                image={item.image}
-                title={item.title}
-                description={item.description}
-                price={item.price}
-                onAddToCart={addToCart}
-                removeFromCart={removeFromCart}
-              />
+              <div className="column show" key={item.key}>
+                <ServicesItem
+                  category={item.category}
+                  image={item.image}
+                  title={item.title}
+                  description={item.description}
+                  price={item.price}
+                  onAddToCart={addToCart}
+                  removeFromCart={removeFromCart}
+                />
+              </div>
             );
           }
           return null; // Skip rendering if item does not match active filter

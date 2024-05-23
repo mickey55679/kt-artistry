@@ -214,7 +214,6 @@ body {
   font-size: 25px;
   text-align: right;
 }
-/* about */
 * {
   box-sizing: border-box;
 }
@@ -222,43 +221,56 @@ body {
 body {
   background-color: #f1f1f1;
   padding: 20px;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
+
+/* Center website */
 .main {
   max-width: 1000px;
   margin: auto;
 }
 
-h2 {
-  font-size: 30px; /* Adjusted font size */
-  margin-bottom: 20px; /* Added margin bottom for spacing */
+h1 {
+  font-size: 50px;
+  word-break: break-all;
 }
 
 .row {
-  display: flex;
-  flex-wrap: wrap; /* Ensure items wrap to the next line */
-  margin: 0 -8px; /* Adjusted margin */
+  margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each item (if you want) */
-.row > * {
-  padding: 0 8px; /* Adjusted padding */
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* Content */
 .content {
   background-color: white;
   padding: 10px;
-  width: calc(33.33% - 16px); /* Adjusted width */
-  margin-bottom: 16px; /* Added margin bottom for spacing */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  box-sizing: border-box; /* Ensure padding is included in width calculation */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+  border-radius: 4px;
 }
 
-.content:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px palevioletred;
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
 }
 
 /* Style the buttons */
@@ -268,17 +280,18 @@ h2 {
   padding: 12px 16px;
   background-color: white;
   cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 8px;
 }
 
-/* Add a gold background color on mouse-over */
+/* Add a grey background color on mouse-over */
 .btn:hover {
-  background: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  background-color: #ddd;
 }
 
 /* Add a dark background color to the active button */
 .btn.active {
-  background-color: palevioletred;
+  background-color: #666;
   color: white;
 }
-
 
