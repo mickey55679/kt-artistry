@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ServicesItem from "./Servicesitem";
+import { v4 as uuidv4 } from "uuid";
 import {multiplenails, spider, christmas, christmasnailart} from "./images/index"
 
 function Services({ addToCart, removeFromCart }) {
@@ -76,6 +77,7 @@ function Services({ addToCart, removeFromCart }) {
       <div className="row">
         {/* Manicures */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image={spider}
           title="Gel/Shellac Manicure"
@@ -85,6 +87,7 @@ function Services({ addToCart, removeFromCart }) {
           removeFromCart={removeFromCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image={christmasnailart}
           title="Kid's Manicure with Regular Polish"
@@ -94,6 +97,7 @@ function Services({ addToCart, removeFromCart }) {
           removeFromCart={removeFromCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image=""
           title="GelX fill"
@@ -102,6 +106,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image=""
           title="Gelx Nails fullset"
@@ -110,6 +115,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image=""
           title="Manicure"
@@ -118,6 +124,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="manicures"
           image=""
           title="Polish Change"
@@ -127,6 +134,7 @@ function Services({ addToCart, removeFromCart }) {
         />
         {/* Pedicures */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="pedicures"
           image=""
           title="Deluxe Pedicure with Gel/Shellac"
@@ -135,6 +143,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="pedicures"
           image=""
           title="Basic Pedicure with Gel/Shellac"
@@ -143,6 +152,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="pedicures"
           image=""
           title="KT pedicure"
@@ -151,6 +161,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="pedicures"
           image=""
           title="Deluxe pedicure"
@@ -159,6 +170,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="pedicures"
           image=""
           title="Basic Pedicure"
@@ -168,6 +180,7 @@ function Services({ addToCart, removeFromCart }) {
         />
         {/* Nail Enhancements  */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Ombre Nails with extensions"
@@ -176,6 +189,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Ombre Dipping Powder on Natural Nails"
@@ -184,6 +198,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Dipping powder with extensions"
@@ -192,6 +207,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Fullset acrylics with gel polish"
@@ -200,6 +216,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Acrylic fill with gel"
@@ -208,6 +225,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailEnhancements"
           image=""
           title="Dipping Powder"
@@ -217,6 +235,7 @@ function Services({ addToCart, removeFromCart }) {
         />
         {/* Nail Maintenance */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailMaintenance"
           image=""
           title="Nails trimming"
@@ -225,6 +244,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailMaintenance"
           image=""
           title="Luminary Nails Fill"
@@ -233,6 +253,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailMaintenance"
           image=""
           title="Luminary Nails"
@@ -240,7 +261,9 @@ function Services({ addToCart, removeFromCart }) {
           price={40}
           onAddToCart={addToCart}
         />
+
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailMaintenance"
           image=""
           title="Shape/matte/design"
@@ -249,6 +272,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="nailMaintenance"
           image=""
           title="Nail Art"
@@ -258,6 +282,7 @@ function Services({ addToCart, removeFromCart }) {
         />
         {/* Specialty Services */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="specialtyServices"
           image=""
           title="French design"
@@ -266,6 +291,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="specialtyServices"
           image=""
           title="Kid's Dipping powder"
@@ -274,6 +300,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="specialtyServices"
           image=""
           title="Men's Mani/Pedi Deluxe"
@@ -282,6 +309,7 @@ function Services({ addToCart, removeFromCart }) {
           onAddToCart={addToCart}
         />
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="specialtyServices"
           image=""
           title="Men's Mani/Pedicure (Basic)"
@@ -291,6 +319,7 @@ function Services({ addToCart, removeFromCart }) {
         />
         {/* Miscellaneous */}
         <ServicesItem
+          key={uuidv4()} // Generate a unique key
           category="miscellaneous"
           image=""
           title="Nail Removal"

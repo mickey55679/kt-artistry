@@ -13,7 +13,12 @@ function Checkout({ cartItems, removeFromCart }) {
         {cartItems.map((item, index) => (
           <li key={index}>
             {item.title} - Downpayment: ${item.downpayment}
-            <button onClick={() => removeFromCart(index)}>Remove</button>
+            <button
+              className="button-75"
+              onClick={() => removeFromCart(item.title, item.id)}
+            >
+              Remove from cart
+            </button>
           </li>
         ))}
       </ul>

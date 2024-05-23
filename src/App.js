@@ -6,14 +6,6 @@ import { Home, About, Navbar, Services, Footer, Checkout } from './components';
 function App() {
   const [cart, setCart] = useState([]);
 
-  // In the addToCart function
-  const addToCart = (title, downpayment) => {
-    const newCartItem = { title, downpayment };
-    const updatedCart = [...cart, newCartItem];
-    setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save cart to localStorage
-  };
-  // Inside the App component
   useEffect(() => {
     const savedCart = localStorage.getItem("cart");
     if (savedCart) {
@@ -21,12 +13,24 @@ function App() {
     }
   }, []); // Empty dependency array ensures this effect runs only once on component mount
 
-  // In the removeFromCart function
-  const removeFromCart = (title) => {
-    const updatedCart = cart.filter((item) => item.title !== title);
+  
+  const addToCart = (title, downpayment) => {
+    const id = Date.now(); // Generate a unique ID
+    const newCartItem = { id, title, downpayment }; // Include ID in the cart item
+    const updatedCart = [...cart, newCartItem];
     setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Update localStorage after removing item
+    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save cart to localStorage
   };
+
+  
+ const removeFromCart = (title, id) => {
+   const updatedCart = cart.filter(
+     (item) => item.id !== id || item.title !== title
+   );
+   setCart(updatedCart);
+   localStorage.setItem("cart", JSON.stringify(updatedCart));
+ };
+
 
   return (
     <Router>
