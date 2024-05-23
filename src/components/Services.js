@@ -79,7 +79,7 @@ function Services() {
         {/* Manicures */}
         <ServicesItem
           category="manicures"
-          image="/path/to/manicure_image.jpg"
+          image={spider}
           title="Gel/Shellac Manicure"
           description="A long-lasting polish with a gel finish."
         />

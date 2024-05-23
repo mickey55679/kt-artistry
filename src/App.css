@@ -276,8 +276,3 @@ h1 {
   color: white;
 }
 
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: palevioletred;
-  color: white;
-}
