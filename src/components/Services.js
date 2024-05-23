@@ -11,7 +11,14 @@ function Services({ addToCart, removeFromCart }) {
     setActiveFilter(category);
   };
    const serviceData = [
-     // Manicures
+//      Manicures:
+
+// Kid’s Manicure with Regular Polish
+// Gel/Shellac Manicure
+// GelX fill
+// Gelx Nails fullset
+// Manicure
+// Polish Change
      {
        key: uuidv4(),
        category: "manicures",
@@ -32,8 +39,42 @@ function Services({ addToCart, removeFromCart }) {
        onAddToCart: addToCart,
        removeFromCart: removeFromCart,
      },
-     // Pedicures
-     // Add similar objects for pedicures, nail enhancements, etc.
+//      Pedicures:
+// Deluxe Pedicure with Gel/Shellac
+// Basic Pedicure with Gel/Shellac
+// KT pedicure
+// Deluxe pedicure
+// Basic Pedicure
+
+// Nail Enhancements:
+
+// Ombre Nails with extensions
+// Ombre Dipping Powder on Natural Nails
+// Dipping powder with extensions
+// Fullset acrylics with gel polish
+// Acrylic fill with gel
+// Dipping Powder
+
+// Nail Maintenance:
+
+// Nails trimming
+// Luminary Nails Fill
+// Luminary Nails
+// Shape/matte/design
+// Nail Art
+// Specialty Services:
+
+// French design
+// Kid’s Dipping powder
+// Men’s Mani/Pedi Deluxe
+// Men’s Mani/Pedicure (Basic)
+// Miscellaneous:
+
+// Nail Removal
+// $15.00
+// 30 mins
+// Nail Removal
+    
    ];
   return (
     <div className="main">
