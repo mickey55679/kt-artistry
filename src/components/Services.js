@@ -11,19 +11,11 @@ function Services({ addToCart, removeFromCart }) {
     setActiveFilter(category);
   };
    const serviceData = [
-     //      Manicures:
-
-     // Kid’s Manicure with Regular Polish
-     // Gel/Shellac Manicure
-     // GelX fill
-     // Gelx Nails fullset
-     // Manicure
-     // Polish Change
      {
        id: uuidv4(),
        category: "manicures",
        image: spider,
-       title: "Gel/Shellac Manicure",
+       title: "Kid's Manicure with Regular Polish",
        description: "",
        price: 50,
        onAddToCart: addToCart,
@@ -33,7 +25,7 @@ function Services({ addToCart, removeFromCart }) {
        id: uuidv4(),
        category: "manicures",
        image: christmasnailart,
-       title: "Kid's Manicure with Regular Polish",
+       title: "Gel/Shellac Manicure",
        description: "",
        price: 25,
        onAddToCart: addToCart,
@@ -42,9 +34,39 @@ function Services({ addToCart, removeFromCart }) {
 
      {
        id: uuidv4(),
-       category: "",
-       image: multiplenails,
-       title: "multiple nails",
+       category: "manicures",
+       image: '',
+       title: "GelX fill",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "manicures",
+       image: '',
+       title: "Gelx Nails fullset",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "manicures",
+       image: '',
+       title: "Manicure",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "manicures",
+       image: '',
+       title: "Polish Change",
        description: "",
        price: "",
        onAddToCart: addToCart,
@@ -52,11 +74,56 @@ function Services({ addToCart, removeFromCart }) {
      },
 
      //      Pedicures:
-     // Deluxe Pedicure with Gel/Shellac $10 30min
-     // Basic Pedicure with Gel/Shellac
-     // KT pedicure
-     // Deluxe pedicure
-     // Basic Pedicure
+     {
+       id: uuidv4(),
+       category: "pedicures",
+       image: '',
+       title: "Deluxe Pedicure with Gel/Shellac",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "pedicures",
+       image: '',
+       title: "Basic Pedicure with Gel/Shellac",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "pedicures",
+       image: '',
+       title: "KT pedicure",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "pedicures",
+       image: '',
+       title: "Deluxe pedicure",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "pedicures",
+       image: '',
+       title: "Basic Pedicure",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
 
      // Nail Enhancements:
 

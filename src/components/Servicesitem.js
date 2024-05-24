@@ -20,7 +20,7 @@ function ServicesItem({
       <h3>{title}</h3>
       <p>{description}</p>
       <p>${price}</p>
-      <button
+      <button 
         onClick={(event) => {
           event.preventDefault();
           onAddToCart(item);
