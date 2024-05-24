@@ -10,10 +10,7 @@ function Navbar({ cartCount }) {
     <nav className="navbar">
       <div className="logo">
         <a href="/">
-          <img
-            src={ktLogo}
-            alt="KT artistry"
-          />
+          <img src={ktLogo} alt="KT artistry" />
         </a>
       </div>
       <ul className="nav-links">
@@ -40,7 +37,10 @@ function Navbar({ cartCount }) {
       </ul>
       <div className="navbar-cart">
         <Link to="/checkout">
-          <FontAwesomeIcon icon={faShoppingCart} />
+          <FontAwesomeIcon
+            icon={faShoppingCart}
+            style={{ color: "palevioletred" }}
+          />
           {cartCount > 0 && <span className="cart-count">{cartCount}</span>}
         </Link>
       </div>
