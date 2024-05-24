@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import {ktLogo} from './images/index'
 
 
 function Navbar({ cartCount }) {
@@ -10,7 +11,7 @@ function Navbar({ cartCount }) {
       <div className="logo">
         <a href="/">
           <img
-            src="https://scontent.ffsd2-1.fna.fbcdn.net/v/t39.30808-6/295984747_191912463177368_7972863195733534214_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=j_MXjqCyv8AQ7kNvgGmN-rp&_nc_ht=scontent.ffsd2-1.fna&oh=00_AYBQDh5WMlsERUgN17hz0UXTpJ3Soi0L_LQ0iRSSfmVl2Q&oe=664F2BB7"
+            src={ktLogo}
             alt="KT artistry"
           />
         </a>

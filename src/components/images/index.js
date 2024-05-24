@@ -6,5 +6,6 @@ import multiplenails from "./multiplenails.jpeg"
 import christmas from "./christmas.jpeg"
 import grinchnails from "./grinch.jpeg"
 import spider from './spider.jpeg'
+import ktLogo from './kt artistry.jpeg'
 
-export { familyPhoto, christmasnailart, christmasplaid, multiplenails, christmas, grinchnails, spider };
+export { familyPhoto, christmasnailart, christmasplaid, multiplenails, christmas, grinchnails, spider, ktLogo };
