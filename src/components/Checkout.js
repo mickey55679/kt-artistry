@@ -22,7 +22,7 @@ function Checkout({ cartItems, removeFromCart }) {
           </li>
         ))}
       </ul>
-      <button onClick={handleCheckout}>Confirm and Pay</button>
+      <button onClick={handleCheckout} className="button-75">Confirm and Pay</button>
     </div>
   );
 }
