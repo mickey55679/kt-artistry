@@ -27,14 +27,14 @@ function ServicesItem({
           onAddToCart(item);
         }}
       >
-        Add to Cart
+        Add to cart
       </button>
 
       <button
         className="remove-btn"
         onClick={() => removeFromCart(item.title, item.id)}
       >
-        Remove from Cart
+        Remove 
       </button>
     </div>
   );

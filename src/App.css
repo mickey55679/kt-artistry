@@ -1,6 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap');
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Sedan SC", serif;
   background-color: #f9f4f1;
 }
 /* navbar -- adjusted for mobile  */
@@ -9,7 +12,7 @@ body {
   display: flex;
   align-items: center;
 }
-
+/* cart */
 .cart-count {
   position: absolute;
   top: -10px;
@@ -55,11 +58,13 @@ body {
 .nav-links a.active {
   color: palevioletred;
 }
-/* Homepage */
-.Homepage {
-  width: 100%;
-  height: auto;
-  padding: 2rem 0;
+
+/* Home-page slideshow paragraph */
+.kt-paragraph{
+   font-family: "Sedan SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
 }
 
 .background-size-slideshow {

@@ -59,7 +59,7 @@ function Slideshow() {
       }}
     >
       <div className="box-slideshow" onClick={() => navigate("./Services")}>
-        <div className="paragraph">
+        <div className="kt-paragraph">
           <p>
             My mission is to provide exceptional nail care services that ensures
             my clients leave with beautiful, healthy nails and a sense of joy
