@@ -14,20 +14,21 @@ function App() {
   }, []); // Empty dependency array ensures this effect runs only once on component mount
 
   
-  const addToCart = (item) => {
-    const updatedCart = [...cart, item];
-    setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Error here
-  };
-
-  
- const removeFromCart = (title, id) => {
-   const updatedCart = cart.filter(
-     (item) => item.id !== id || item.title !== title
-   );
+ const addToCart = (item) => {
+   console.log("Adding to cart", item);
+   const updatedCart = [...cart, item];
    setCart(updatedCart);
    localStorage.setItem("cart", JSON.stringify(updatedCart));
  };
+  
+const removeFromCart = (title, id) => {
+  console.log("Removing from cart", title, id);
+  const updatedCart = cart.filter(
+    (item) => item.id !== id || item.title !== title
+  );
+  setCart(updatedCart);
+  localStorage.setItem("cart", JSON.stringify(updatedCart));
+};
 
 
   return (

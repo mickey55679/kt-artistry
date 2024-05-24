@@ -20,10 +20,21 @@ function ServicesItem({
       <h3>{title}</h3>
       <p>{description}</p>
       <p>${price}</p>
-      {/* Call onAddToCart with the item object when the button is clicked */}
-      <button onClick={() => onAddToCart(item)}>Add to Cart</button>
-      {/* Call removeFromCart with the item title and category when the button is clicked */}
-      <button onClick={() => removeFromCart(title, category)}>
+      <button
+        onClick={(event) => {
+          event.preventDefault();
+          onAddToCart(item);
+        }}
+      >
+        Add to Cart
+      </button>
+
+      <button
+        onClick={(event) => {
+          event.preventDefault();
+          removeFromCart(title, category);
+        }}
+      >
         Remove from Cart
       </button>
     </div>
