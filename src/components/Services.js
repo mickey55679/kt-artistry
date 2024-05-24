@@ -35,7 +35,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "manicures",
-       image: '',
+       image: "",
        title: "GelX fill",
        description: "",
        price: "",
@@ -45,7 +45,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "manicures",
-       image: '',
+       image: "",
        title: "Gelx Nails fullset",
        description: "",
        price: "",
@@ -55,7 +55,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "manicures",
-       image: '',
+       image: "",
        title: "Manicure",
        description: "",
        price: "",
@@ -65,19 +65,18 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "manicures",
-       image: '',
+       image: "",
        title: "Polish Change",
        description: "",
        price: "",
        onAddToCart: addToCart,
        removeFromCart: removeFromCart,
      },
-
      //      Pedicures:
      {
        id: uuidv4(),
        category: "pedicures",
-       image: '',
+       image: "",
        title: "Deluxe Pedicure with Gel/Shellac",
        description: "",
        price: "",
@@ -87,7 +86,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "pedicures",
-       image: '',
+       image: "",
        title: "Basic Pedicure with Gel/Shellac",
        description: "",
        price: "",
@@ -97,7 +96,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "pedicures",
-       image: '',
+       image: "",
        title: "KT pedicure",
        description: "",
        price: "",
@@ -107,7 +106,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "pedicures",
-       image: '',
+       image: "",
        title: "Deluxe pedicure",
        description: "",
        price: "",
@@ -117,7 +116,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "pedicures",
-       image: '',
+       image: "",
        title: "Basic Pedicure",
        description: "",
        price: "",
@@ -125,7 +124,17 @@ function Services({ addToCart, removeFromCart }) {
        removeFromCart: removeFromCart,
      },
 
-     // Nail Enhancements:
+     // Nail-Enhancements:
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Ombre Nails with extensions",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
 
      // Ombre Nails with extensions
      // Ombre Dipping Powder on Natural Nails
@@ -175,6 +184,14 @@ function Services({ addToCart, removeFromCart }) {
           className={`btn ${activeFilter === "pedicures" ? "active" : ""}`}
         >
           Pedicures
+        </button>
+        <button
+          onClick={() => filterSelection("Nail-Enhancements")}
+          className={`btn ${
+            activeFilter === "Nail-Enhancements" ? "active" : ""
+          }`}
+        >
+          Nail-Enhancements
         </button>
       </div>
       <div className="row">

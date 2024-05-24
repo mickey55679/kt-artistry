@@ -5,6 +5,7 @@ import Services from './Services'
 import Footer from './Footer';
 import Slideshow from './Slideshow';
 import Checkout from './Checkout'
+import Login from './Login';
 
 
-export {Home, About, Navbar, Services, Footer, Slideshow, Checkout}
+export {Home, About, Navbar, Services, Footer, Slideshow, Checkout, Login}
