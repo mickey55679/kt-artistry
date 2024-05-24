@@ -20,7 +20,8 @@ function ServicesItem({
       <h3>{title}</h3>
       <p>{description}</p>
       <p>${price}</p>
-      <button 
+      <button
+        className="add-btn"
         onClick={(event) => {
           event.preventDefault();
           onAddToCart(item);
@@ -29,7 +30,10 @@ function ServicesItem({
         Add to Cart
       </button>
 
-      <button onClick={() => removeFromCart(item.title, item.id)}>
+      <button
+        className="remove-btn"
+        onClick={() => removeFromCart(item.title, item.id)}
+      >
         Remove from Cart
       </button>
     </div>
