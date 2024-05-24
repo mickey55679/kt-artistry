@@ -20,7 +20,7 @@ function Services({ addToCart, removeFromCart }) {
      // Manicure
      // Polish Change
      {
-       key: uuidv4(),
+       id: uuidv4(),
        category: "manicures",
        image: spider,
        title: "Gel/Shellac Manicure",
@@ -30,7 +30,7 @@ function Services({ addToCart, removeFromCart }) {
        removeFromCart: removeFromCart,
      },
      {
-       key: uuidv4(),
+       id: uuidv4(),
        category: "manicures",
        image: christmasnailart,
        title: "Kid's Manicure with Regular Polish",
@@ -41,7 +41,7 @@ function Services({ addToCart, removeFromCart }) {
      },
 
      {
-       key: uuidv4(),
+       id: uuidv4(),
        category: "",
        image: multiplenails,
        title: "multiple nails",
@@ -50,7 +50,7 @@ function Services({ addToCart, removeFromCart }) {
        onAddToCart: addToCart,
        removeFromCart: removeFromCart,
      },
-     
+
      //      Pedicures:
      // Deluxe Pedicure with Gel/Shellac $10 30min
      // Basic Pedicure with Gel/Shellac

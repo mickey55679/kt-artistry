@@ -29,12 +29,7 @@ function ServicesItem({
         Add to Cart
       </button>
 
-      <button
-        onClick={(event) => {
-          event.preventDefault();
-          removeFromCart(title, category);
-        }}
-      >
+      <button onClick={() => removeFromCart(item.title, item.id)}>
         Remove from Cart
       </button>
     </div>
