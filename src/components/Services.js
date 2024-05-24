@@ -43,7 +43,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        key: uuidv4(),
        category: "",
-       image: "",
+       image: multiplenails,
        title: "",
        description: "",
        price: "",

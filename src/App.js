@@ -14,12 +14,10 @@ function App() {
   }, []); // Empty dependency array ensures this effect runs only once on component mount
 
   
-  const addToCart = (title, downpayment) => {
-    const id = Date.now(); // Generate a unique ID
-    const newCartItem = { id, title, downpayment }; // Include ID in the cart item
-    const updatedCart = [...cart, newCartItem];
+  const addToCart = (item) => {
+    const updatedCart = [...cart, item];
     setCart(updatedCart);
-    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Save cart to localStorage
+    localStorage.setItem("cart", JSON.stringify(updatedCart)); // Error here
   };
 
   
