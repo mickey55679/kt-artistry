@@ -135,13 +135,57 @@ function Services({ addToCart, removeFromCart }) {
        onAddToCart: addToCart,
        removeFromCart: removeFromCart,
      },
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Ombre Dipping Powder on Natural Nails",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Dipping powder with extensions",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Fullset acrylics with gel polish",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Acrylic fill with gel",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Enhancements",
+       image: "",
+       title: "Dipping Powder",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
 
-     // Ombre Nails with extensions
-     // Ombre Dipping Powder on Natural Nails
-     // Dipping powder with extensions
-     // Fullset acrylics with gel polish
-     // Acrylic fill with gel
-     // Dipping Powder
 
      // Nail Maintenance:
 
