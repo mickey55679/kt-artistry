@@ -186,26 +186,110 @@ function Services({ addToCart, removeFromCart }) {
        removeFromCart: removeFromCart,
      },
 
+     // Nail-Maintenance:
+     {
+       id: uuidv4(),
+       category: "Nail-Maintenance",
+       image: "",
+       title: "Nails trimming",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Maintenance",
+       image: "",
+       title: "Luminary Nails Fill",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Maintenance",
+       image: "",
+       title: "Luminary Nails",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Maintenance",
+       image: "",
+       title: "Shape/matte/design",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Nail-Maintenance",
+       image: "",
+       title: "Nail Art",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     // Specialty-Services:
+     {
+       id: uuidv4(),
+       category: "Specialty-Services",
+       image: "",
+       title: "French design",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Specialty-Services",
+       image: "",
+       title: "Kid's Dipping powder",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Specialty-Services",
+       image: "",
+       title: "Men's Mani/Pedi Deluxe",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
+     {
+       id: uuidv4(),
+       category: "Specialty-Services",
+       image: "",
+       title: "Men's Mani/Pedicure (Basic)",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
 
-     // Nail Maintenance:
-
-     // Nails trimming
-     // Luminary Nails Fill
-     // Luminary Nails
-     // Shape/matte/design
-     // Nail Art
-     // Specialty Services:
-
-     // French design
-     // Kid’s Dipping powder
-     // Men’s Mani/Pedi Deluxe
-     // Men’s Mani/Pedicure (Basic)
      // Miscellaneous:
-
-     // Nail Removal
-     // $15.00
-     // 30 mins
-     // Nail Removal
+     {
+       id: uuidv4(),
+       category: "Miscellaneous",
+       image: "",
+       title: "Nail Removal",
+       description: "",
+       price: "",
+       onAddToCart: addToCart,
+       removeFromCart: removeFromCart,
+     },
    ];
   return (
     <div className="main">
@@ -236,6 +320,28 @@ function Services({ addToCart, removeFromCart }) {
           }`}
         >
           Nail-Enhancements
+        </button>
+        <button
+          onClick={() => filterSelection("Nail-Maintenance")}
+          className={`btn ${
+            activeFilter === "Nail-Maintenance" ? "active" : ""
+          }`}
+        >
+          Nail-Maintenance
+        </button>
+        <button
+          onClick={() => filterSelection("Specialty-Services")}
+          className={`btn ${
+            activeFilter === "Specialty-Services" ? "active" : ""
+          }`}
+        >
+          Specialty-Services
+        </button>
+        <button
+          onClick={() => filterSelection("Miscellaneous")}
+          className={`btn ${activeFilter === "Miscellaneous" ? "active" : ""}`}
+        >
+          Miscellaneous
         </button>
       </div>
       <div className="row">
