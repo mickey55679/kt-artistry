@@ -67,8 +67,7 @@ function App() {
             {/* // Route for Checkout page with cart review functionality */}
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
-          <Footer />
-           {/* // Display footer component */}
+          <Footer /> {/* // Display footer component */}
         </main>
       </div>
     </Router>
