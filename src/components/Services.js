@@ -35,7 +35,7 @@ function Services({ addToCart, removeFromCart }) {
      {
        id: uuidv4(),
        category: "manicures",
-       image: "",
+       image: multiplenails,
        title: "GelX fill",
        description: "",
        price: "",
