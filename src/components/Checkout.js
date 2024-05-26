@@ -1,8 +1,10 @@
 import React from "react";
 
+// The Checkout component receives 'cartItems' and 'removeFromCart' props from its parent component
 function Checkout({ cartItems, removeFromCart }) {
+  // Function to handle the checkout process
   const handleCheckout = () => {
-    // Implement the checkout logic here
+    // This could be expanded to include real payment processing logic
     alert("Checkout successful!");
   };
 
@@ -13,9 +15,7 @@ function Checkout({ cartItems, removeFromCart }) {
         {cartItems.map((item, index) => (
           <li key={index}>
             {item.title} - Downpayment: ${item.downpayment}
-            <button
-              onClick={() => removeFromCart(item.title, item.id)}
-            >
+            <button onClick={() => removeFromCart(item.title, item.id)}>
               Remove from cart
             </button>
           </li>
