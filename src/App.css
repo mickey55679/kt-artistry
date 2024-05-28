@@ -65,10 +65,23 @@ body {
   font-style: normal;
   font-size: 20px;
 }
-
-.background-size-slideshow {
-  padding: 25rem 0rem;
+@media (max-width: 768px) {
+  .kt-paragraph {
+    font-size: 15px; /* Adjust the font size for smaller screens */
+    background-color: #f9f4f1;
+    padding: 20px 20px 20px 20px;
+  }
 }
+.background-size-slideshow {
+  padding: 15rem 0rem; /* Adjust the padding as needed */
+}
+
+@media (max-width: 768px) {
+  .background-size-slideshow {
+    padding: 10rem 0rem;
+  }
+}
+
 /* About Section */
 .About-content {
   text-align: center;
@@ -340,6 +353,6 @@ h1 {
   border: 1px solid black; /* Optional: Add borders for visual separation */
   padding: 20px; /* Optional: Add padding for spacing */
 }
-.column-one img{
+.column-one img {
   height: 600px;
 }
