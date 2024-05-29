@@ -56,14 +56,14 @@ function App() {
                   removeFromCart={removeFromCart}
                 />
               }
-            />{" "}
+            />
             {/* // Route for Services page with cart management functions */}
             <Route
               path="/checkout"
               element={
                 <Checkout cartItems={cart} removeFromCart={removeFromCart} />
               }
-            />{" "}
+            />
             {/* // Route for Checkout page with cart review functionality */}
             {/* <Route path="/contact" element={<Contact />} /> */}
           </Routes>
