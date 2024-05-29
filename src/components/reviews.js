@@ -66,8 +66,12 @@ function Reviews() {
   return (
     <div>
       <div className="reviews-container">{reviewsArray[currentIndex]}</div>
-      <button onClick={prevReview}>Previous</button>
-      <button onClick={nextReview}>Next</button>
+      <button onClick={prevReview} className="previous-button">
+        Previous
+      </button>
+      <button onClick={nextReview} className="next-button">
+        Next
+      </button>
     </div>
   );
 }
