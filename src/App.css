@@ -359,11 +359,15 @@ h1 {
   padding: 20px; /* Optional: Add padding for spacing */
 }
 .column-three {
-  flex: 1; /* Each column gets an equal share of the available space */
-  border: 1px solid black; /* Optional: Add borders for visual separation */
-  padding: 20px; /* Optional: Add padding for spacing */
-  /* padding-top: 100px; */
+  flex: 1;
+  border: 1px solid black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px; /* Adjust the maximum width as needed */
 }
+
 .about-paragraph {
   margin-top: 150px;
   margin-bottom: 50px;
