@@ -65,7 +65,7 @@ function Reviews() {
 
   return (
     <div>
-      <div className="reviews">{reviewsArray[currentIndex]}</div>
+      <div className="reviews-container">{reviewsArray[currentIndex]}</div>
       <button onClick={prevReview}>Previous</button>
       <button onClick={nextReview}>Next</button>
     </div>

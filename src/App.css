@@ -353,6 +353,22 @@ h1 {
   border: 1px solid black; /* Optional: Add borders for visual separation */
   padding: 20px; /* Optional: Add padding for spacing */
 }
+.column-two {
+  flex: 1; /* Each column gets an equal share of the available space */
+  border: 1px solid black; /* Optional: Add borders for visual separation */
+  padding: 20px; /* Optional: Add padding for spacing */
+}
+.column-three {
+  flex: 1; /* Each column gets an equal share of the available space */
+  border: 1px solid black; /* Optional: Add borders for visual separation */
+  padding: 20px; /* Optional: Add padding for spacing */
+  /* padding-top: 100px; */
+}
+.about-paragraph {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  text-align: center;
+}
 .column-one img {
   height: 600px;
 }
